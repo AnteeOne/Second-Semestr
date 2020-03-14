@@ -538,4 +538,7 @@ public class MyNavigableSet<T> extends AbstractSet<T> implements NavigableSet<T>
         }
     }
 
+    public void setArr(ArrayList<T> arr) {
+        this.arr = arr;
+    }
 }
