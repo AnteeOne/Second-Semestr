@@ -10,3 +10,5 @@ out/production/SecondSemestr/IT/HW7/StreamHW.class
 out/production/SecondSemestr/Core.class
 out/production/SecondSemestr/IT/HW5/MyNavigableSet.class
 out/production/SecondSemestr/META-INF/SecondSemestr.kotlin_module
+*.xml
+*.class

@@ -4,10 +4,7 @@
     <list default="true" id="61b66742-50c6-46f4-8b82-977b92c7e444" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SecondSemestr/Core.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondSemestr/Core.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondSemestr/IT/HW5/MyNavigableSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondSemestr/IT/HW5/MyNavigableSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondSemestr/META-INF/SecondSemestr.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT/HW5/MyNavigableSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT/HW5/MyNavigableSet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +101,14 @@
       <workItem from="1583955476033" duration="5568000" />
       <workItem from="1584029853255" duration="8451000" />
       <workItem from="1584040717709" duration="96000" />
-      <workItem from="1584189076506" duration="13020000" />
+      <workItem from="1584189076506" duration="13700000" />
+      <workItem from="1584212879461" duration="4081000" />
+      <workItem from="1584267042577" duration="10000" />
+      <workItem from="1584358835751" duration="1202000" />
+      <workItem from="1584441519853" duration="9363000" />
+      <workItem from="1584523425788" duration="363000" />
+      <workItem from="1584524111658" duration="663000" />
+      <workItem from="1584525820167" duration="5629000" />
     </task>
     <servers />
   </component>
@@ -116,7 +120,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
