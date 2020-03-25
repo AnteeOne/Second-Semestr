@@ -17,13 +17,13 @@ public class CovidObjectInputStream extends InputStream {
         throw new UnsupportedOperationException();
     }
 
-    public Object readCovid(){
+    public Object readCovid() throws IOException {
         Covid res = null;
         try(ObjectInputStream oin = new ObjectInputStream(in)){
              res = (Covid) oin.readObject();
         }
         catch (IOException | ClassNotFoundException e){
-            e.printStackTrace();
+            throw new IOException("Problems with encoding",e);
         }
         return res;
     }

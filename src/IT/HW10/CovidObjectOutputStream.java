@@ -10,12 +10,12 @@ public class CovidObjectOutputStream extends OutputStream {
         this.out = out;
     }
 
-    public void writeCovid(Covid covid){
+    public void writeCovid(Covid covid) throws IOException {
         try(ObjectOutputStream oout = new ObjectOutputStream(out)){
             oout.writeObject(covid);
         }
         catch (IOException e){
-            e.printStackTrace();
+            throw new IOException("Problems with coding",e);
         }
     }
 
