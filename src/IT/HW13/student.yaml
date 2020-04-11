@@ -1,0 +1,5 @@
+--- !IT.HW1.Student
+artPoints: !java.lang.Long 72
+mathPoints: !java.lang.Long 100
+name: Oleg
+scholarship: !java.lang.Long 7000

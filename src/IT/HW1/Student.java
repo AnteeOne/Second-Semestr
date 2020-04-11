@@ -1,17 +1,59 @@
 package IT.HW1;
 
-public class Student implements Comparable<Student> {
-    private int scholarship;
-    private int mathPoints;
-    private int artPoints;
-    private String name;
+import java.io.Serializable;
+
+public class Student implements Comparable<Student> , Serializable {
+    public long scholarship;
+    public long mathPoints;
+    public long artPoints;
+    public String name;
     @Override
     public int compareTo(Student o) {
-        return Integer.compare(this.scholarship,o.scholarship);
+        return Long.compare(this.scholarship,o.scholarship);
     }
 
-    public int getMathPoints() {
+    public long getScholarship() {
+        return scholarship;
+    }
+
+    public long getMathPoints() {
         return mathPoints;
+    }
+
+    public long getArtPoints() {
+        return artPoints;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Student(long scholarship, long mathPoints, long artPoints, String name) {
+        this.scholarship = scholarship;
+        this.mathPoints = mathPoints;
+        this.artPoints = artPoints;
+        this.name = name;
+    }
+
+    public Student(String name) {
+        this.name = name;
+        this.scholarship = 0;
+        this.mathPoints = 0;
+        this.artPoints = 0;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "scholarship=" + scholarship +
+                ", mathPoints=" + mathPoints +
+                ", artPoints=" + artPoints +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    public Student() {
     }
 }
 
