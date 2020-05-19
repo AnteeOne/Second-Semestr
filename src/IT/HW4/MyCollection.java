@@ -2,10 +2,7 @@ package IT.HW4;
 
 import IT.HW3.FirstArrayIterator;
 
-import java.util.AbstractCollection;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 public class MyCollection<T> extends AbstractCollection<T> {
 
@@ -46,5 +43,21 @@ public class MyCollection<T> extends AbstractCollection<T> {
         return "MyCollection{" +
                 "data=" + Arrays.toString(data) +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyCollection<?> that = (MyCollection<?>) o;
+        return size == that.size &&
+                Arrays.equals(data, that.data);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(size);
+        result = 31 * result + Arrays.hashCode(data);
+        return result;
     }
 }

@@ -1,6 +1,7 @@
 package IT.HW1;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Student implements Comparable<Student> , Serializable {
     public long scholarship;
@@ -28,6 +29,9 @@ public class Student implements Comparable<Student> , Serializable {
         return name;
     }
 
+    public Student() {
+    }
+
     public Student(long scholarship, long mathPoints, long artPoints, String name) {
         this.scholarship = scholarship;
         this.mathPoints = mathPoints;
@@ -53,7 +57,20 @@ public class Student implements Comparable<Student> , Serializable {
                 '}';
     }
 
-    public Student() {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return scholarship == student.scholarship &&
+                mathPoints == student.mathPoints &&
+                artPoints == student.artPoints &&
+                Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(scholarship, mathPoints, artPoints, name);
     }
 }
 

@@ -30,7 +30,7 @@ public class URI_Download {
             }
             System.out.println("Count of lines in file = " + stringCount);
             System.out.println("Count of divs in file = " + divcount);
-            if (!contentType.equals(null) || !contentType.equals("")) {
+            if (contentType != null || !contentType.equals("")) {
                 File file2 = new File(file.getParent() + stringCount +"result." + contentType.split("[;./|]+")[1]);
                 Files.copy(file.toPath(), file2.toPath());
             }
