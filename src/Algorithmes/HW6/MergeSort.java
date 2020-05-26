@@ -1,4 +1,4 @@
-package Algorithmes.HW4;
+package Algorithmes.HW7;
 
 import java.util.Arrays;
 
@@ -66,6 +66,8 @@ public class MergeSort {
         merge(a, l, r, mid, n - mid);
     }
 
+
+    //dop
     public static void mergeSortWithoutRecursion(long[] arr){
         int n = arr.length;
         int currentsize;

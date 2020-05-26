@@ -1,4 +1,4 @@
-package Algorithmes.HW6;
+package Algorithmes.HW7;
 
 
 import java.util.LinkedList;

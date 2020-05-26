@@ -1,8 +1,8 @@
-package Algorithmes.HW6;
+package Algorithmes.HW7;
 
 public class TreeTest {
 
-    public static void run(){
+    public static void main(String[] args){
 
         Node n1 = new Node(1);
         Node n2 = new Node(23);
