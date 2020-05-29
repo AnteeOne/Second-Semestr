@@ -1,4 +1,4 @@
-package Algorithmes.HW7;
+package Algorithmes.HW6;
 
 import java.util.Arrays;
 

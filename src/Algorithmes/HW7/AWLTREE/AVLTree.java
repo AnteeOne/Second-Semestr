@@ -1,6 +1,5 @@
 package Algorithmes.HW7.AWLTREE;
 
-import java.util.ArrayList;
 
 public class AVLTree <K extends Comparable<K>>{
 
@@ -26,51 +25,6 @@ public class AVLTree <K extends Comparable<K>>{
         size = 0;
     }
 
-
-
-
-    public boolean isBST(){
-        ArrayList<K> keys = new ArrayList<>();
-        midOrder(root,keys);
-        for (int i = 1; i < keys.size(); i++) {
-
-            if(keys.get(i-1).compareTo(keys.get(i))>0 ){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private void midOrder(Node node,ArrayList<K> keys){
-        if(node == null) return;
-        midOrder(node.left,keys);
-        keys.add(node.key);
-        midOrder(node.right,keys);
-    }
-
-//    private void midOrder(Node node){ //
-//        if(node == null) return;
-//        midOrder(node.left,keys);
-//        keys.add(node.key);
-//        midOrder(node.right,keys);
-//    }
-
-
-    public boolean isBalance(){
-        return isBalance(root);
-    }
-
-
-    private boolean isBalance(Node node){
-        if(node == null) return true;   //
-
-        int balanceFactor = getBalanceFactor(node);
-        if(Math.abs(balanceFactor) > 1){
-            return false;
-        }
-        return isBalance(node.left) && isBalance(node.right);
-
-    }
 
     private int getHeight(Node node){
         if(node == null) return 0;
